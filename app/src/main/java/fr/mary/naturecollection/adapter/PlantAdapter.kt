@@ -27,14 +27,14 @@ class PlantAdapter(
     //ViewHolder hérite de RecyclerView
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view){
         //val = constante qui va recuperer la view de la plante
-        val plantImage = view.findViewById<ImageView>(R.id.image_item)
+        val plantImage: ImageView = view.findViewById<ImageView>(R.id.image_item)
         //Recup nom + description de la plante --> recup le nom qui est dans le fichier xml
 
         // ? : si on ne trouve pas de texte view on fait rien
         //car dans les name_item horizontaux on a pas de text
         val plantName : TextView? = view.findViewById(R.id.name_item)
         val plantDescription : TextView? = view.findViewById(R.id.description_item)
-        val starIcon = view.findViewById<ImageView>(R.id.star_icon)
+        val starIcon: ImageView = view.findViewById<ImageView>(R.id.star_icon)
     }
 
     //Permet d injecter le layout
