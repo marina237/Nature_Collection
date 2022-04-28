@@ -8,17 +8,14 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import fr.mary.naturecollection.MainActivity
-import fr.mary.naturecollection.PlantModel
-import fr.mary.naturecollection.PlantRepository
-import fr.mary.naturecollection.R
+import fr.mary.naturecollection.*
 
 
 //Classe permettant d adapter a chaque plante son image
 class PlantAdapter(
 
     //Constructeur
-    private val context : MainActivity,
+    val context : MainActivity,
     private val plantList : List<PlantModel>,
     private val layoutId:Int
 
@@ -95,6 +92,14 @@ class PlantAdapter(
 
             //MAJ l objet plante
             repo.updatePlant(currentPlant)
+
+        }
+
+        //Interaction pour afficher le popup lors du clic sur une plante
+        holder.itemView.setOnClickListener{
+
+            //affichage de la popup
+            PlantPopup(this).show()
 
         }
 
