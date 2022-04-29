@@ -2,6 +2,11 @@
 
 
     <string name="app_name">Nature Emoi</string>
+    
+    <string name="bottom_home_item">Acceuil</string>
+    <string name="bottom_collection_item">Collecton</string>
+    <string name="bottom_add_plant_item">Ajouter</string>
+
 
     <!-- On met les textes qui seront utilsés dans l app -->
 

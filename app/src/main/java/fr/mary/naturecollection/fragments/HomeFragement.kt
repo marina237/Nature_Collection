@@ -37,7 +37,7 @@ class HomeFragment(
         val horizontalRecyclerView = view.findViewById<RecyclerView>(R.id.horizontal_recycler_view)
 
         //va charger les plantes --> en fait il va appeler la class PlantAdapter(type d item) afin de générer les 5 items
-        horizontalRecyclerView.adapter = PlantAdapter(context,plantList,R.layout.item_horizontal_plant)
+        horizontalRecyclerView.adapter = PlantAdapter(context,plantList.filter { !it.liked },R.layout.item_horizontal_plant)
 
 
         //recuperation du second recyclerView ( il contient l "item" vertical)

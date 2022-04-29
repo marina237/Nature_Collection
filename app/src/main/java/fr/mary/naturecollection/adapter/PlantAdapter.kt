@@ -99,7 +99,7 @@ class PlantAdapter(
         holder.itemView.setOnClickListener{
 
             //affichage de la popup
-            PlantPopup(this).show()
+            PlantPopup(this,currentPlant).show()
 
         }
 

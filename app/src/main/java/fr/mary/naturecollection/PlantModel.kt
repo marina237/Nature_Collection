@@ -9,6 +9,8 @@ class PlantModel(
     val name : String = "Tulipe",
     val description : String = "Petite description",
     val imageUrl : String = "C://Users//mary-//AndroidStudioProjects//NatureCollection//app//src//main//res//drawable-mdpi//trending1.jpg",
-    var liked : Boolean = false
+    var liked : Boolean = false,
+    val grow : String = "Faible",
+    val water : String = "Moyenne"
 
 )

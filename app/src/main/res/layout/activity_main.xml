@@ -42,6 +42,19 @@
         android:background="@color/white"
         />
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/green"
+        app:menu="@menu/bottom_navigation_menu"
+        android:theme="@style/BottomNavigationTheme"
+        app:itemTextColor="@drawable/bottom_nav_color"
+        app:itemIconTint="@drawable/bottom_nav_color"/>
+
 
 
 
